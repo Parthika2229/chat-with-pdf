@@ -1,0 +1,20 @@
+# Never commit these
+.env
+__pycache__/
+*.pyc
+*.idx
+*.pickle
+
+# Uploaded PDFs and generated indexes
+uploads/
+indexes/
+
+# Virtual environment
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# Mac junk
+.DS_Store
