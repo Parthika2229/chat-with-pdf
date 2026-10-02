@@ -1,76 +1,32 @@
 # Document Q&A App
 
-Upload a document and ask questions about it. The app reads your file and answers using an AI language model, so you don't have to search through the text yourself.
+A Streamlit app that lets you upload a document and ask questions about it. An AI model reads the document and answers based on its content.
 
-**Live app:** [add your Streamlit link here]
+**Live app:** https://your-app-name.streamlit.app
 
-## What it does
+## Project Structure
 
-- Upload a text or markdown document (`.txt`, `.md`)
-- Type a question about the document
-- Get an answer based on the document's content
+```
+├── streamlit_app.py     # Main Streamlit app (UI and AI logic)
+├── requirements.txt     # Python dependencies
+├── LICENSE              # Apache-2.0 license
+└── README.md            # Project documentation
+```
 
-## Why I built it
+## How It Works
 
-[Write 1-2 sentences in your own words. For example: "I wanted a quick way to pull answers out of long notes and articles without reading everything."]
+1. **Upload:** The user uploads a text or markdown file (`.txt` or `.md`).
+2. **Ask:** The user types a question about the document.
+3. **Read:** The app reads the file and combines the document text with the question into one prompt.
+4. **Answer:** The prompt is sent to the OpenAI API, and the model generates an answer based only on the document.
+5. **Display:** The answer is shown in the app.
 
-## Built with
+```
+Upload file → Enter question → Document + question sent to OpenAI → Answer displayed
+```
+
+## Tech Stack
 
 - Python
-- [Streamlit](https://streamlit.io) for the web interface
-- [OpenAI API](https://platform.openai.com) for answering questions
-
-## How to run it locally
-
-1. Clone the repository
-```bash
-   git clone https://github.com/Parthika2229/[your-repo-name].git
-   cd [your-repo-name]
-```
-
-2. Install the dependencies
-```bash
-   pip install -r requirements.txt
-```
-
-3. Run the app
-```bash
-   streamlit run streamlit_app.py
-```
-
-4. Open the link shown in your terminal (usually `http://localhost:8501`) and enter your API key when asked.
-
-## API key
-
-The app needs an OpenAI API key. You can get one from the [OpenAI platform](https://platform.openai.com/api-keys).
-
-- **Locally:** paste it into the app's sidebar, or add it to `.streamlit/secrets.toml`
-- **On Streamlit Community Cloud:** add it under *Advanced settings → Secrets*
-
-Never commit your API key to GitHub.
-
-## Project structure
-
-```
-├── streamlit_app.py     # Main app
-├── requirements.txt     # Python dependencies
-└── README.md
-```
-
-## What I changed from the template
-
-[List anything you customized, such as the layout, the prompt, supported file types, or the model. Delete this section if you haven't changed anything yet.]
-
-## Future ideas
-
-- Support PDF and Word files
-- Remember previous questions in a chat
-- [Add your own]
-
-## Credits and license
-
-Started from Streamlit's [document-qa-template](https://github.com/streamlit/document-qa-template). Licensed under the Apache License 2.0.
-
----
-
-Built by [Parthika Battala](https://github.com/Parthika2229)
+- Streamlit
+- OpenAI API
