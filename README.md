@@ -2,7 +2,7 @@
 
 A Streamlit app that lets you upload a document and ask questions about it. An AI model reads the document and answers based on its content.
 
-**Live app:** https://your-app-name.streamlit.app
+**Live app:** https://document-app-uvneh7pt35.streamlit.app/
 
 ## Project Structure
 
